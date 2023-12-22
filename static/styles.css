@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav{
+    background-color: #20345c;
+    height: 75px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding:20px
+}
+
+.container {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: center; 
+    gap: 25px;
+    flex: 1;
+}
+
+.container .box {
+    background-color: #20345c;
+    padding: 10px;
+    width: 175px;
+    height: 200px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5% 5% 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+   
+}
+
+.box-link i:hover {
+    transform: scale(1.1);
+}
+
+
+.container .box h3 {
+    color: #FFF;
+    margin-top: 20px;
+}
+
+.container .box i {
+    color: #FFF;
+    font-size: 75px;
+    transition: transform 0.5s ease;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 300px;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #20345c;
+}
+
+.form-container i {
+    color: #FFF;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.form-container h3 {
+    color: #FFF;
+    font-size: 30px;
+}
+
+.form-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 10px;
+}
+.form-title h3 {
+    padding-top: 5px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    width: 400px;
+    height: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+    background-color: #5c8c94;
+}
+
+/* Estilos para o botão Enviar */
+input[type="submit"] {
+    padding: 10px;
+    background-color: #5c8c94;
+    color: #fff;
+    height: 41px;
+    width: 90px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+footer {
+    background-color: transparent;
+    color: #20345c;
+    font-size: smaller;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para o link de download */
+.download-link {
+    margin-top: 15px;
+    text-align: center;
+    color: #FFF;
+}
+.download-link i {
+    color: #5c8c94;
+    font-size: medium;
+    transition: transform 0.3s ease;
+}
+
+.download-link i:hover {
+    transform: rotate(-90deg); /* Aplica a rotação quando passa o mouse */
+}
+
+.download-link a {
+    position: relative;
+    color: #5c8c94;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 3px; 
+    
+}
+
+.download-link a:hover {
+    text-decoration: none;
+}
+
+.download-link a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; 
+    background: #5c8c94;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+
+.download-link a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left; 
+}
+
+/* 405 */
+
+.container-405{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.container-405 i {
+    font-size: 100px;
+    color: #ff0000;
+}
+
+.container-405 h3 {
+    font-size: 1.5rem;
+}
